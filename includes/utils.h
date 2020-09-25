@@ -1,19 +1,20 @@
+#ifndef UtilsH
+#define UtilsH
+#include <vector>
+#include "constants.h"
+
 //sort the data
-	sortData(SORT_ORDER::START_TIME,myProcesses);
+void sortData(const SORT_ORDER &mySortOrder,std::vector<process> &myProcesses);
 
 //gets the next process from the vector, then removes it from the vector
 //returns removed process
-process getNext(vector<process> &myProcesses){
-	process p;
-	return p;
+process getNext(std::vector<process> &myProcesses);
 
     //returns the number of entries in the vector
-int getSize(vector<process> &myProcesses){
-	return UNIMPLEMENTED;
-}
+int getSize(std::vector<process> &myProcesses);
 
 //if cannot correct, then drop row
 //return number of rows in myProcesses
-int handleMissingData(vector<process> &myProcesses){
-	return NO_DATA_TO_WORK_ON;
-}
+int handleMissingData(std::vector<process> &myProcesses);
+
+#endif

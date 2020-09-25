@@ -1,3 +1,7 @@
+#ifndef ConstantsH
+#define ConstantsH  
+#include <string>
+
 const std::string SOURCE_FILE 	= "source_file.txt";
 const std::string RESULTS_FILE 	= "results_file.txt";
 
@@ -15,3 +19,5 @@ enum SORT_ORDER { PROCESS_NUMBER, CPU_TIME, START_TIME };
 struct process{	int process_number=UNINITIALIZED;
 				int cpu_time=UNINITIALIZED;
 				int start_time=UNINITIALIZED;};
+
+#endif

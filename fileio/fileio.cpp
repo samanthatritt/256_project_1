@@ -16,3 +16,4 @@ int loadData(const std::string filename, vector<process> &myProcesses){
 //returns SUCCESS if all goes well or COULD_NOT_OPEN_FILE
 int saveData(const std::string filename, vector<process> &myProcesses){
 	return UNIMPLEMENTED;
+}
